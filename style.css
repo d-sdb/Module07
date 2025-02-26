@@ -1,0 +1,252 @@
+/* style.css */
+
+/*CSS Reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#content-container {
+    background-color: #f0e8c4; /* Tan background */
+    padding: 0%; /* Padding around the content */
+    margin-top: 0; 
+    max-width: 2200px; /* max width for the content container */
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+
+body {
+ font-family:  Georgia, serif;
+  background-color: whitesmoke;
+}
+
+
+/*Navbar Functionality*/
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: auto;
+    width: 100vw;
+    font-family: Georgia, serif;
+    margin-top: 0px;
+    position: fixed;
+    z-index: 3;
+    justify-content: flex-start;
+    min-height: 60px;
+}
+
+#navbar-text {
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 100PX;
+    padding-top: 10px;
+}
+/*Navbar content functionality*/
+#navcontent {
+    display: flex;
+    justify-content: left;
+    padding-left: 90pX;
+}
+
+/*Navbar content styling*/
+ul li {
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+ul li a {
+    padding: 1px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+}
+
+ul li a:hover {
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.hamburger-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: black; 
+    margin-right: 20px;
+    z-index: 5;
+}
+
+/* website background image designing */
+#container1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 63vh;;
+    overflow: hidden;
+}
+
+/*Setting the background image using before pseudo selector*/
+#container1::before {
+    content: '';
+    background: url("images/pexels-jonathanborba-2878745.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 59vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    z-index: 1;
+    opacity: 0.89;
+    border: 2px solid black;
+    filter: blur(5px);
+
+}
+
+#row1 {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 25vh;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+#top3 {
+    text-align: center;
+    color: black;
+    font-family: Georgia, serif;
+    background-color: #f0e8c4;
+}
+
+#container4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}
+
+
+
+/*Designing the footer*/
+footer {
+    padding-top: 40px;
+    text-align: center;
+}
+/*Changing the color of placeholder*/
+::placeholder {
+    color: gray;
+}
+
+
+/* Styles for image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 4 images per row */
+    gap: 20px;  /* space between the images */
+    margin-top: 20px;
+  }
+  
+  .image-box {
+    text-align: center;
+    padding: 10;
+    cursor:default;
+    outline: none;
+    border: 2px  solid black;  /* black border around the image/text */
+    border-radius: 15px;
+  }
+  
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;  /* image is a block element */
+    cursor: default;
+    outline: none;
+    padding: 0px;
+    border-radius: 15px;
+    
+  }
+  
+  /* Apply black border around the text */
+  .image-box p {
+    display: inline-block;  /*  text block behaves like an inline element */
+    padding: 0px;          /* padding in the text box */
+    background-color: whitesmoke;  /*  background color to make text blend in */
+    margin: 5;              /* margin */
+    text-align: center;     /* centers the text*/
+    font-size: 18px;        
+    cursor: default;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 2px  black;
+  }
+  
+
+
+  @media only screen and (max-width: 768px) {
+    /* Display hamburger icon on smaller screens */
+    .hamburger-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;  /* Align it to the left */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #navbar-text {
+        padding-left: 40px;
+        flex-grow: 1;
+
+    }
+
+    /* Hide the nav content by default on small screens */
+    #navcontent {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Show nav content when hamburger is clicked */
+    #navcontent.active {
+        display: flex;
+    }
+
+    #navbar {
+        flex-direction: row;
+        height: auto;             /* Adjust the height of the navbar automatically */
+        padding: 10px 20px;          /* Reduce padding */
+        min-height: 50px; 
+    }
+}
+
+/* Responsive Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 4 images per row */
+    gap: 20px;  /* space between the images */
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    padding-top: 30px;
+    text-align: center;
+}

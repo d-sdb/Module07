@@ -1,0 +1,97 @@
+<!-- Filename - index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <hr>
+    <nav id="navbar">
+        <h1 id="navbar-text">Luigi's Italian Restaurant</h1>
+        
+        <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger symbol -->
+        </div>
+
+        <ul id="navcontent">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+        <ul id="navcontent">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="container1">
+        <div id="row1">
+            <h2>Welcome to Luigi's Italian Restaurant!</h2>
+            <p>Serving Delicious Italian Food and Homemade Pasta with Quality Ingredients in Raleigh, NC</p>
+        </div>
+    </div>
+
+    <div id="content-container">
+        <hr>
+        <h1 id="top3">Our Products</h1>
+    <hr>
+
+          <!-- image grid section -->
+          <div class="image-grid">
+            <!-- Row 1 -->
+            <div class="image-box">
+                <img src="images\pexels-fotios-photos-1279330.jpg" alt="Spaghetti">
+                <p>Spaghetti</p>
+            </div>
+            <div class="image-box">
+                <img src="images\pexels-mariana-kurnyk-844465-1775043.jpg" alt="Garlic Bread">
+                <p>Garlic Bread</p>
+            </div>
+            <div class="image-box">
+                <img src="images\pexels-anna-guerrero-788383-4078183.jpg" alt="Cannoli">
+                <p>Cannoli</p>
+            </div>
+            <div class="image-box">
+                <img src="images\pexels-d-u-lu-2149367618-30882828.jpg" alt="Salad">
+                <p>Salad</p>
+            </div>
+        
+            <!-- Row 2 -->
+            <div class="image-box">
+                <img src="images\pexels-fariphotography-905847.jpg" alt="pizza">
+                <p>Pizza</p>
+            </div>
+            <div class="image-box">
+                <img src="images\pexels-anete-lusina-29721408.jpg" alt="Tiramisu">
+                <p>Tiramisu</p>
+            </div>
+            <div class="image-box">
+                <img src="images\pexels-enginakyurt-1435896.jpg" alt="Vegan Pasta">
+                <p>Vegan Pasta</p>
+            </div>
+            <div class="image-box">
+                <img src="images\pexels-luna-lovegood-4087615.jpg" alt="Flatbread">
+                <p>Flatbread</p>
+            </div>
+        </div>
+          
+
+    <footer>Copyright © 2020-2021 Dani's Delights.
+        All Rights are reserved.</footer>
+
+    <script>
+        // JavaScript function to toggle menu on smaller screens
+        function toggleMenu() {
+            const navContent = document.getElementById('navcontent');
+            navContent.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
