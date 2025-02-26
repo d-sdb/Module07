@@ -7,8 +7,8 @@
 }
 
 #content-container {
-    background-color: #f0e8c4; /* Tan background */
-    padding: 0%; /* Padding around the content */
+    background-color: #f0e8c4; 
+    padding: 0%; 
     margin-top: 0; 
     max-width: 2200px; /* max width for the content container */
     margin-left: auto;
@@ -48,14 +48,14 @@ body {
     padding-left: 100PX;
     padding-top: 10px;
 }
-/*Navbar content functionality*/
+/*Navbar content functions*/
 #navcontent {
     display: flex;
     justify-content: left;
     padding-left: 90pX;
 }
 
-/*Navbar content styling*/
+/*Navbar content styles*/
 ul li {
     list-style: none;
     margin: 15px;
@@ -84,7 +84,7 @@ ul li a:hover {
     z-index: 5;
 }
 
-/* website background image designing */
+/* website background image  */
 #container1 {
     position: relative;
     display: flex;
@@ -95,7 +95,7 @@ ul li a:hover {
     overflow: hidden;
 }
 
-/*Setting the background image using before pseudo selector*/
+/*Setting the background image using before selector*/
 #container1::before {
     content: '';
     background: url("images/pexels-jonathanborba-2878745.jpg") no-repeat center center/cover;
@@ -141,12 +141,12 @@ ul li a:hover {
 
 
 
-/*Designing the footer*/
+/* footer*/
 footer {
     padding-top: 40px;
     text-align: center;
 }
-/*Changing the color of placeholder*/
+/*color of placeholder*/
 ::placeholder {
     color: gray;
 }
@@ -156,7 +156,7 @@ footer {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);  /* 4 images per row */
-    gap: 20px;  /* space between the images */
+    gap: 20px;  
     margin-top: 20px;
   }
   
@@ -167,6 +167,8 @@ footer {
     outline: none;
     border: 2px  solid black;  /* black border around the image/text */
     border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+    opacity: 0.75;
   }
   
   
@@ -178,14 +180,15 @@ footer {
     outline: none;
     padding: 0px;
     border-radius: 15px;
+    opacity: 0.75;
     
   }
   
   /* Apply black border around the text */
   .image-box p {
-    display: inline-block;  /*  text block behaves like an inline element */
-    padding: 0px;          /* padding in the text box */
-    background-color: whitesmoke;  /*  background color to make text blend in */
+    display: inline-block;  /*  text block behaves as an inline element */
+    padding: 0px;          
+    background-color: whitesmoke;  /*  make text blend in */
     margin: 5;              /* margin */
     text-align: center;     /* centers the text*/
     font-size: 18px;        
@@ -199,13 +202,13 @@ footer {
 
 
   @media only screen and (max-width: 768px) {
-    /* Display hamburger icon on smaller screens */
+    /* Display hamburger icon  */
     .hamburger-icon {
         display: block;
         font-size: 30px;
         cursor: pointer;
         position: absolute;
-        left: 20px;  /* Align it to the left */
+        left: 20px; 
         top: 50%;
         transform: translateY(-50%);
     }
@@ -216,7 +219,7 @@ footer {
 
     }
 
-    /* Hide the nav content by default on small screens */
+    /* Hide by default on small screens */
     #navcontent {
         display: none;
         flex-direction: column;
@@ -231,8 +234,8 @@ footer {
 
     #navbar {
         flex-direction: row;
-        height: auto;             /* Adjust the height of the navbar automatically */
-        padding: 10px 20px;          /* Reduce padding */
+        height: auto;             /* Adjust the height automatically */
+        padding: 10px 20px;          
         min-height: 50px; 
     }
 }
@@ -241,7 +244,7 @@ footer {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);  /* 4 images per row */
-    gap: 20px;  /* space between the images */
+    gap: 20px;  
     margin-top: 20px;
 }
 
